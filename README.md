@@ -50,15 +50,6 @@ The project consists of the following files and directories:
 
 The project uses a MySQL database named `user_system` with a table called `users`. Below is the structure of the `users` table:
 
-### `users` Table Structure
-```sql
-CREATE TABLE `users` (
-  `id` INT AUTO_INCREMENT PRIMARY KEY,
-  `username` VARCHAR(50) NOT NULL,
-  `email` VARCHAR(100) NOT NULL,
-  `password` VARCHAR(255) NOT NULL,
-  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
 
 Future Improvements
 Password Reset: Implement functionality for users to reset their passwords if they forget them.
@@ -71,3 +62,13 @@ If you'd like to contribute to this project, please fork the repository and subm
 License
 This project is open source and available under the MIT License. See the LICENSE file for more information.
 
+
+### `users` Table Structure
+```sql
+CREATE TABLE `users` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `username` VARCHAR(50) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
